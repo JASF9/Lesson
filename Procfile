@@ -1,1 +1,1 @@
-web: java -cp build/classes/index.html 
+web: java -cp target/classes/:target/dependency/* WebLesson
