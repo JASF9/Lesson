@@ -1,1 +1,1 @@
-web: java -cp build/classes/ WebLesson
+web: java -cd build/classes/index.html 
