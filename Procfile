@@ -1,1 +1,1 @@
-web: java -war target/WebLesson-0.0.1-SNAPSHOT.war
+web: java -jar target/WebLesson-0.0.1-SNAPSHOT.war
