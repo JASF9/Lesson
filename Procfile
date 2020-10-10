@@ -1,1 +1,1 @@
-web: java -cd build/classes/index.html 
+web: java -cp build/classes/index.html 
