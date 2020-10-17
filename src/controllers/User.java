@@ -38,9 +38,7 @@ public class User {
 						dbc.prepare(dbc.getSentence("registerUser"));
 						try {
 							dbc.exQuery();
-							//return "User registered.";
-							return "{message:'User registered.',status:200}";
-							  //return"{'message': 'user already exist', 'status': 503 }";
+							return"{'message': 'user already exist', 'status': 503 }";
 						}
 						catch(SQLException s) {
 							return "Error detected. Try again.";
