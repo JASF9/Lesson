@@ -24,7 +24,7 @@ public class VideoController {
 				System.out.println("Creada");
 			}
 			String[] s = video.getContentType().split("/");
-			String uri = "public/media/"+email+"/"+video.getSubmittedFileName()+"."+s[1];
+			String uri = "../media/"+email+"/"+video.getSubmittedFileName()+"."+s[1];
 			fileOut = new FileOutputStream(new File(uri));
 			in = video.getInputStream();
 			upload(in);
@@ -74,7 +74,7 @@ public class VideoController {
 				System.out.println("Creada");
 			}
 			String[] s = image.getContentType().split("/");
-			String uri = "public/media/"+email+"/"+image.getSubmittedFileName()+"."+s[1];
+			String uri = "../media/"+email+"/"+image.getSubmittedFileName()+"."+s[1];
 			fileOut = new FileOutputStream(new File(uri));
 			in = image.getInputStream();
 			upload(in);
