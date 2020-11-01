@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="../styles/HomeTemplate.css">
+<title>Home</title>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="../views/updateUser.html">Update User Info</a> 
+  <a href="../views/deleteUser.html">Delete Account</a>
+  <a href="../views/uploadVideo.html">Upload Video</a>
+  <a href="../view/uploadImage.html">Upload Account Image</a>  
+  <form name='searchForm' id='searchForm' method='get' action="https://weblesson.herokuapp.com/Login">
+  <input type="text" name="search" placeholder="Search users...">
+  <input type="submit" value="Search"/>
+  </form>
+</div>
+
+<div class="content">
+  <h2>Welcome!</h2>
+  <p>Search an user to see their videos.</p>
+</div> 
+
+</body>
+</html>

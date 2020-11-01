@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="../styles/UserForm.css">
+    <title>Upload User Image</title>
+  </head>
+  <body>
+    <h1>Upload User Image</h1>
+    <form name="image-form" id="image-form" method="post" enctype="multipart/form-data" action="https://weblesson.herokuapp.com/Media">
+	  <input type="hidden" id="_method" name="_method" value="PUT"/>
+	  <label for="image">Select image to upload:</label>
+	  <input type="file" name="image"/><br/>
+	  <input type="submit" value="Post Image"/>
+    </form>
+    <p id="response" name="response"></p>
+    <a href="home.html">Go Back</a> 
+  </body>
+</html>

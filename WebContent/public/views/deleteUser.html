@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="../styles/UserForm.css">
+    <!-- <script src="../scripts/delete.js" defer></script> -->
+<title>Delete Account</title>
+</head>
+<body>
+ <h1>Delete Account</h1>
+    <p>Are you sure you want to delete your account?</p>
+      <form name="delete-form" method="get" action="https://weblesson.herokuapp.com/Register">
+      <input type="hidden" id="_method" name="_method" value="DELETE"/>
+	  <input type="submit" value="Yes"/>
+    </form>
+ <a href="home.html">No, Go Back</a> 
+</body>
+</html>

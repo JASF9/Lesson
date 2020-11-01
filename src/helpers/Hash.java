@@ -4,7 +4,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class Hash {
-	public String encrypt(String password) {
+	
+	public static String encrypt(String password) {
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-256");
 			String pass = password+"secret";

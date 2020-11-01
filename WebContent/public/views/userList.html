@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="../styles/HomeTemplate.css">
+<title>Search Result</title>
+</head>
+<body>
+<div id="data"></div>
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://weblesson.herokuapp.com/Register"); 
+xhr.onload = function(event){ 
+    document.getElementById("data").innerHTML = xhr.responseText;  
+}; 
+var formData = new FormData();
+formData.append("_method","GET");
+xhr.send(formData);
+</script>
+</body>
+</html>
