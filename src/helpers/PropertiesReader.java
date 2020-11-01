@@ -10,7 +10,7 @@ public class PropertiesReader {
 	
 	InputStream input;
 	Properties prop;
-	String fileName = "config.properties";
+	String fileName = "local.properties";
 	
 	public PropertiesReader() {
 		try {

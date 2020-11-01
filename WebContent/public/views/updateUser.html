@@ -3,23 +3,26 @@
   <head>
     <meta charset="ISO-8859-1">
     <link rel="stylesheet" href="../styles/UserForm.css">
-    <!-- <script src="../scripts/register.js" defer></script> -->
-    <title>Register</title>
+    <!-- <script src="../scripts/update.js" defer></script> -->
+    <title>Update User Info</title>
   </head>
   <body>
     <h1>Register</h1>
     <p>Please fill all fields.</p>
-    <form name="register-form" id="register-form" method="post" action="http://localhost:8080/WebLesson/Register">
+    <form name="update-form" id="update-form" method="get" action="http://localhost:8080/WebLesson/Register">
+      <input type="hidden" id="_method" name="_method" value="PUT"/>
 	  <label for="name">Name:</label>
 	  <input type="text" name="name"/><br/>
 	  <label for="email">Email:</label>
 	  <input type="text" name="email"/><br/>
-	  <label for="password">Password:</label>
+	  <label for="password">Old password:</label>
 	  <input type="password" name="password"/><br/>
+	  <label for="newpass">New password:</label>
+	  <input type="password" name="newspass"/><br/>
 	  <input type="submit" value="Register"/> 
     </form>
     <!-- <button type="button" id="register-button">Register</button>-->
     <p id="response" name="response"></p>
-    <a href="login.html">Already got an account</a> 
+    <a href="home.html">Go Back</a> 
   </body>
 </html>

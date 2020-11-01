@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="../styles/UserForm.css">
+    <title>Upload Video</title>
+  </head>
+  <body>
+    <h1>Upload Video</h1>
+    <form name="video-form" id="video-form" method="post" enctype="multipart/form-data" action="http://localhost:8080/WebLesson/Media">
+	  <input type="hidden" id="_method" name="_method" value="POST"/>
+	  <label for="video">Select video to upload:</label>
+	  <input type="file" name="video"/><br/>
+	  <input type="submit" value="Post Video"/>
+    </form>
+    <p id="response" name="response"></p>
+    <a href="home.html">Go Back</a> 
+  </body>
+</html>
